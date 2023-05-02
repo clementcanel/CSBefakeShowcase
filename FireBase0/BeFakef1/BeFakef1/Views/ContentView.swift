@@ -17,6 +17,9 @@ struct ContentView: View {
         }else{
             LoginView(logStatus: $logStatus) // try this
         }
+//        CreateNewPost{ _ i
+//
+//        }
     }
 }
 

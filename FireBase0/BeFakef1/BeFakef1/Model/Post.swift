@@ -10,16 +10,15 @@ import FirebaseFirestoreSwift
 import Foundation
 
 
-struct Post: Identifiable {
+struct Post: Codable, Identifiable {
     @DocumentID var id: String?
     var text: String
-    var imageURL: URL
+    var imageURL: URL? = nil
     var imageReferenceID: String = ""
     var publishedDate: Date = Date()
     var likedIDs: [String] = []
     var dislikedIDs: [String] = []
-    
-    var username: String
+    var userName: String
     var userUID: String
     var userProfileURL: URL
 

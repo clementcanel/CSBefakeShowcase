@@ -12,7 +12,7 @@ struct MainView: View {
     var body: some View {
        
             TabView{
-                Text("BeFakePosts.")
+                PostsView()
                     .tabItem {
                         Image(systemName: "photo.fill.on.rectangle.fill")
                         Text("posts")
