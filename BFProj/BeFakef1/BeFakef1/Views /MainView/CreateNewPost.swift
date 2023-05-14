@@ -113,9 +113,8 @@ struct CreateNewPost: View {
                 Button("Done"){
                     showKeyboard = false
 //                    NavigationStack {
-//                        PostsView()
+//                      PostsView()
 //                    }
-                    
                 }
                 .font(.title3)
                 .foregroundColor(.white)
