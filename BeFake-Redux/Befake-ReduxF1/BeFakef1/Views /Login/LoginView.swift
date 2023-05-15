@@ -28,7 +28,7 @@ struct LoginView: View {
     var body: some View {
         VStack(spacing: 5){
             
-            Text("Login to Account")
+            Text("LogIn")
                 .font(.largeTitle)
                 .hAlign(.center)
                 .fontWeight(.light)
@@ -36,8 +36,10 @@ struct LoginView: View {
                 .background(Divider(), alignment: .bottom)
                 .padding(.top, 150)
                 .preferredColorScheme(.dark)
-
-
+            
+            
+            
+            
             
             VStack(spacing: 1){
                 HStack {
@@ -68,14 +70,14 @@ struct LoginView: View {
                     .hAlign(.trailing)
                 
                 Button(action: loginUser){
-                    Text("Signin")
+                    Text("SignIn")
                         .foregroundColor(.black)
                         .hAlign(.center)
                         .fillView(.white)
                         .padding(.top, 50)
                 }
                 
-                Text("BeFake")
+                Text("BeFake.")
                     .multilineTextAlignment(.center)
                     .fontWeight(.heavy)
                     .font(.largeTitle)
@@ -87,7 +89,8 @@ struct LoginView: View {
                         .font(.callout)
                         .vAlign(.bottom)
                     
-                    Button("SignUp"){
+                    
+                    Button("SignUp Here"){
                         createAccount.toggle()
                     }
                     .font(.callout)
@@ -95,7 +98,7 @@ struct LoginView: View {
                 }
                 
             }
-                
+            
         }
         .vAlign(.top)
         .padding(15)
@@ -105,7 +108,7 @@ struct LoginView: View {
         
         .fullScreenCover(isPresented: $createAccount) {
             RegisterView()
-
+            
         }
         
         .alert(errorMessage, isPresented: $showError, actions: {})
@@ -126,7 +129,7 @@ struct LoginView: View {
                 try await fetchUser()
                 
             }catch{
-               await setError(error)
+                await setError(error)
             }
         }
     }
@@ -150,7 +153,7 @@ struct LoginView: View {
                 try await Auth.auth().sendPasswordReset(withEmail: emailID)
                 print("link sent")
             }catch{
-               await setError(error)
+                await setError(error)
             }
         }
         

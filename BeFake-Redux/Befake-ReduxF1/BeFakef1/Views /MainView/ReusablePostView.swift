@@ -24,7 +24,7 @@ struct ReusablePostView: View {
                             .fontWeight(.bold)
                             .foregroundColor(.gray)
                     }else{
-                      
+                        
                         Posts()
                     }
                 }
@@ -46,9 +46,9 @@ struct ReusablePostView: View {
     func Posts()->some View{
         ForEach(posts){post in
             PostCardView(post: post) { updatePost in
-               
+                
             } onDelete: {
-               
+                
             }
             Divider()
         }
