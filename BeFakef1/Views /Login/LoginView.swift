@@ -28,7 +28,11 @@ struct LoginView: View {
     var body: some View {
         VStack(spacing: 5){
             
+<<<<<<< HEAD
             Text("Login to Account")
+=======
+            Text("LogIn.")
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                 .font(.largeTitle)
                 .hAlign(.center)
                 .fontWeight(.light)
@@ -37,13 +41,23 @@ struct LoginView: View {
                 .padding(.top, 150)
                 .preferredColorScheme(.dark)
 
+<<<<<<< HEAD
 
+=======
+            
+
+        
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
             
             VStack(spacing: 1){
                 HStack {
                     Image(systemName: "person.text.rectangle.fill")
                         .padding(.top, 20)
+<<<<<<< HEAD
                     TextField("Email", text: $emailID)
+=======
+                    TextField("email", text: $emailID)
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                         .textContentType(.emailAddress)
                         .border(1, .gray.opacity(0.2))
                         .textInputAutocapitalization(.never)
@@ -53,7 +67,11 @@ struct LoginView: View {
                 HStack {
                     Image(systemName: "door.left.hand.closed")
                         .padding(.top, 50)
+<<<<<<< HEAD
                     SecureField("Password", text: $password)
+=======
+                    SecureField("passowrd", text: $password)
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                         .textContentType(.emailAddress)
                         .border(1, .gray.opacity(0.2))
                         .textInputAutocapitalization(.never)
@@ -61,33 +79,55 @@ struct LoginView: View {
                         .padding(.top, 50)
                     
                 }
+<<<<<<< HEAD
                 Button("Reset Password?", action: resetPassword )
+=======
+                Button("reset password?", action: resetPassword )
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                     .font(.callout)
                     .fontWeight(.medium)
                     .padding(.top, 5)
                     .hAlign(.trailing)
                 
                 Button(action: loginUser){
+<<<<<<< HEAD
                     Text("Signin")
+=======
+                    Text("SignIn.")
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                         .foregroundColor(.black)
                         .hAlign(.center)
                         .fillView(.white)
                         .padding(.top, 50)
                 }
                 
+<<<<<<< HEAD
                 Text("BeFake")
+=======
+                Text("BeFake.")
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                     .multilineTextAlignment(.center)
                     .fontWeight(.heavy)
                     .font(.largeTitle)
                     .padding(.top, 140)
                 
                 HStack {
+<<<<<<< HEAD
                     Text("Don't have an account?")
                         .fontWeight(.thin)
                         .font(.callout)
                         .vAlign(.bottom)
                     
                     Button("SignUp"){
+=======
+                    Text("don't have an account?")
+                        .fontWeight(.thin)
+                        .font(.callout)
+                        .vAlign(.bottom)
+                       
+                    
+                    Button("SignUp."){
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                         createAccount.toggle()
                     }
                     .font(.callout)
@@ -157,7 +197,10 @@ struct LoginView: View {
         
     }
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
     func setError(_ error: Error)async{
         await MainActor.run(body: {
             errorMessage = error.localizedDescription

@@ -85,7 +85,10 @@ struct PostCardView: View {
 
             }
             Text("\(post.likedIDs.count)")
+<<<<<<< HEAD
                 
+=======
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                 .font(.callout)
                 .foregroundColor(.gray)
             
@@ -95,6 +98,7 @@ struct PostCardView: View {
     
     func likePost(){
         Task{
+<<<<<<< HEAD
             
             let postID = post.id ?? ""
             if post.likedIDs.contains(userUID)  {
@@ -104,6 +108,13 @@ struct PostCardView: View {
             }else{
                 
                try await Firestore.firestore().collection("Posts").document(postID).updateData(["likedIDs": FieldValue.arrayUnion([userUID])])
+=======
+            guard let postID = post.id else{return}
+            if post.likedIDs.contains(userUID){
+                try await Firestore.firestore().collection("Posts").document(postID).updateData(["likedIDs": FieldValue.arrayRemove([userUID])])
+            }else{
+                try await Firestore.firestore().collection("Posts").document(postID).updateData(["likedIDs": FieldValue.arrayUnion([userUID])])
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
             }
         }
     }

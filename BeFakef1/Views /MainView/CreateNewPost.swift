@@ -113,9 +113,14 @@ struct CreateNewPost: View {
                 Button("Done"){
                     showKeyboard = false
 //                    NavigationStack {
+<<<<<<< HEAD
 //                        PostsView()
 //                    }
                     
+=======
+//                      PostsView()
+//                    }
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                 }
                 .font(.title3)
                 .foregroundColor(.white)
@@ -162,7 +167,10 @@ struct CreateNewPost: View {
                     let downloadURL = try await storageRef.downloadURL()
                     
                     let post = Post(text: postText, imageURL: downloadURL, imageReferenceID: imageReferenceID, userName: userNameStored, userUID: userUID, userProfileURL: profileURL)
+<<<<<<< HEAD
                     
+=======
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                     try await createDocumentAtFirebase(post)
                 }else{
                   

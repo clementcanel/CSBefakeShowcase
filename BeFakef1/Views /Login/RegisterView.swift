@@ -10,6 +10,10 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
 import PhotosUI
+<<<<<<< HEAD
+=======
+// Register view for new user 
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
 struct RegisterView: View{
     @State var emailID: String = ""
     @State var password: String = ""
@@ -23,7 +27,10 @@ struct RegisterView: View{
     @State var showError: Bool = false
     @State var photoItem: PhotosPickerItem?
     @State var isLoading: Bool = false
+<<<<<<< HEAD
     @State var signUpIsShown: Bool = false
+=======
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
     
     @AppStorage("log_status") var logStatus: Bool = false
     @AppStorage("user_profile_url") var profileURL: URL?
@@ -31,6 +38,7 @@ struct RegisterView: View{
     @AppStorage("user_UID") var userUID: String = ""
     
     var body: some View{
+<<<<<<< HEAD
         
         Button {
             signUpIsShown.toggle()
@@ -52,12 +60,29 @@ struct RegisterView: View{
         .fullScreenCover(isPresented: $signUpIsShown) {
             RegisterView()
         }
+=======
+
+                Button {
+                    
+                } label: {
+                    Text("SignUp.")
+                        .foregroundColor(.white)
+                        .hAlign(.center)
+                        .fillView(.black)
+                        .padding(.top, 50)
+                        .padding(.horizontal, 25)
+                        .offset(y: -70)
+                    
+                }
+        
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
         ViewThatFits{
             ScrollView(.vertical, showsIndicators: false) {
                 HelperView()
             }
             HelperView()
         }
+<<<<<<< HEAD
         
         HStack {
             Text("Already have an account?")
@@ -249,13 +274,232 @@ struct RegisterView: View{
                 guard let userUID = Auth.auth().currentUser?.uid else{return}
                 guard let imageData = userProfilePicData else{return}
                 let storageRef =  Storage.storage().reference().child("Profile_Images").child(userUID)
+=======
+                
+                Text("BeFake.")
+                    .multilineTextAlignment(.center)
+                    .fontWeight(.heavy)
+                    .font(.largeTitle)
+                    .padding(.top, -5)
+                    
+                
+                HStack {
+                    Text("already have an account?")
+                        .fontWeight(.thin)
+                        .font(.callout)
+                        .vAlign(.bottom)
+                       
+                    
+                    Button("LogIn."){
+                        dismiss()
+                        
+                    }
+                    .font(.callout)
+                    .vAlign(.bottom)
+                    .photosPicker(isPresented: $showImagePicker, selection: $photoItem)
+                    .onChange(of: photoItem) { newValue in
+                        
+                        if let newValue{
+                            Task{
+                                do{
+                guard let imageData = try await newValue.loadTransferable(type: Data.self)
+                                    else{return}
+                                    await MainActor.run(body: {
+                                        userProfilePicData = imageData
+                                    })
+                                }catch{}
+                            }
+                        }
+                    }
+                }
+                
+        
+                .alert(errorMessage, isPresented: $showError, actions:{})
+            }
+    
+    
+    
+              @ViewBuilder
+    func HelperView()-> some View{
+        
+            VStack(spacing: 1){
+                
+                
+                Text("SignUp.")
+                    .font(.largeTitle)
+                    .hAlign(.center)
+                    .fontWeight(.light)
+                    .padding(30)
+                    .background(Divider(), alignment: .bottom)
+                    .padding(.top, 10)
+                
+                ZStack{
+                    if let userProfilePicData, let image = UIImage(data: userProfilePicData){
+                        Image(uiImage: image)
+                            .resizable()
+                            .offset(x: 0, y: 0)
+                            .aspectRatio(contentMode: .fill)
+                            
+                            
+                    }else{
+                        Image(systemName: "person.crop.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            
+
+                
+                    }
+                }
+                    .frame(width: 110, height: 110)
+                    .clipShape(Circle())
+                    .contentShape(Circle())
+                    .onTapGesture{
+                        showImagePicker.toggle()
+                    }
+                    .offset(y: 70)
+                
+
+            
+                
+                VStack(spacing: 1){
+                    HStack(spacing: 1) {
+                        Image(systemName: "person.circle.fill")
+                            .padding(.top, 20)
+                            .offset(x:18, y:98)
+                        TextField("username", text: $userName)
+                            .textContentType(.emailAddress)
+                            .border(1, .gray.opacity(0.2))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, 20)
+                            .padding(.horizontal, 25)
+                            .offset(y: 95)
+
+                    }
+                    
+                    HStack {
+                        Image(systemName: "person.text.rectangle.fill")
+                            .padding(.top, 55)
+                            .offset(x:15, y:62)
+                        TextField("email", text: $emailID)
+                            .textContentType(.emailAddress)
+                            .border(1, .gray.opacity(0.2))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, 55)
+                            .padding(.horizontal, 20)
+                            .offset(x:-5, y: 60)
+
+                    }
+                    
+                    HStack {
+                        Image(systemName: "door.left.hand.closed")
+                            .padding(.top, 60)
+                            .offset(x: 21, y: 22)
+                        SecureField("password", text: $password)
+                            .textContentType(.emailAddress)
+                            .border(1, .gray.opacity(0.2))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, 60)
+                            .padding(.horizontal, 23)
+                            .offset(y: 20)
+                        
+                        
+                    }
+                    HStack {
+                        Image(systemName: "pencil.circle.fill")
+                            .offset(x:20 ,y:10)
+                        TextField("bio", text: $userBio, axis: .vertical)
+                            .frame(minHeight: 25, alignment: .top)
+                            .textContentType(.emailAddress)
+                            .border(1, .gray.opacity(0.2))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, 60)
+                            .padding(.horizontal, 28)
+                            .offset(x:-7 ,y: -19)
+                    }
+                    
+                        TextField("link for bio (optional)", text: $userBioLink)
+                            .textContentType(.emailAddress)
+                            .border(1, .gray.opacity(0.2))
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, 60)
+                            .padding(.horizontal, 41)
+                            .offset(x:7 ,y: -73)
+                
+
+                    Button(action: registerUser){
+                        Text("SignUp.")
+                            .foregroundColor(.black)
+                            .hAlign(.center)
+                            .fillView(.white)
+                            .padding(.top, 50)
+                            .padding(.horizontal, 25)
+                            .offset(y: -90)
+                        
+                    }
+                    
+                    Text("BeFake.")
+                        .multilineTextAlignment(.center)
+                        .fontWeight(.heavy)
+                        .font(.largeTitle)
+                        .padding(.top, -60)
+                        
+                        
+                    
+                    HStack {
+                        Text("already have an account?")
+                            .fontWeight(.thin)
+                            .font(.callout)
+                            .vAlign(.bottom)
+                            .offset(y:-22)
+                           
+                        
+                        Button("LogIn."){
+
+                            dismiss()
+                            
+                        }
+                        .font(.callout)
+                        .vAlign(.bottom)
+                        .offset(y:-22)
+                        .disablewithOpacity(userName == "" || userBio == "" || emailID == "" || password == "" || userProfilePicData == nil )
+
+                    }
+                    
+                }
+                    
+            }
+            .overlay(content: {
+                LoadingView(show: $isLoading)
+            })
+        }
+    
+    func registerUser(){
+        isLoading = true
+        closeKeyboard()
+        Task{
+            do{
+                
+    try await Auth.auth().createUser(withEmail: emailID, password: password)
+                guard let userUID = Auth.auth().currentUser?.uid else{return}
+    guard let imageData = userProfilePicData else{return}
+    let storageRef = Storage.storage().reference().child("Profile_Images").child(userUID)
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                 let _ = try await storageRef.putDataAsync(imageData)
                 let downloadURL = try await storageRef.downloadURL()
                 let user = User(username: userName, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
                 let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: {
                     error in
                     if error == nil{
+<<<<<<< HEAD
                         print("Saved Successfully")
+=======
+                        print("saved successfully")
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
                         userNameStored = userName
                         self.userUID = userUID
                         profileURL = downloadURL
@@ -270,7 +514,10 @@ struct RegisterView: View{
         }
         
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
     func setError(_ error: Error)async{
         await MainActor.run(body:{
             errorMessage = error.localizedDescription
@@ -278,6 +525,7 @@ struct RegisterView: View{
             isLoading = false
         })
     }
+<<<<<<< HEAD
     @MainActor
     func setError(errorstring: String ){
         errorMessage = errorstring
@@ -286,6 +534,10 @@ struct RegisterView: View{
     }
     
 }
+=======
+    
+    }
+>>>>>>> bb82a3a3c2817da05c7f70eea697f0705c5b0d8b
 
 
 struct RegisterView_Previews: PreviewProvider {
