@@ -10,7 +10,6 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
 import PhotosUI
-// Register view for new user 
 struct RegisterView: View{
     @State var emailID: String = ""
     @State var password: String = ""
@@ -24,6 +23,7 @@ struct RegisterView: View{
     @State var showError: Bool = false
     @State var photoItem: PhotosPickerItem?
     @State var isLoading: Bool = false
+    @State var signUpIsShown: Bool = false
     
     @AppStorage("log_status") var logStatus: Bool = false
     @AppStorage("user_profile_url") var profileURL: URL?
@@ -33,18 +33,25 @@ struct RegisterView: View{
     var body: some View{
 
                 Button {
-                    
+                    signUpIsShown.toggle()
+                  
                 } label: {
-                    Text("SignUp.")
+                    Text("SignUp")
+                        .font(Font.system(size: 40, design: .monospaced))
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                         .hAlign(.center)
                         .fillView(.black)
-                        .padding(.top, 50)
-                        .padding(.horizontal, 25)
+                        .padding(.top, 100)
+                        .padding(.horizontal, 15)
                         .offset(y: -70)
                     
+                    
+                    
                 }
-        
+                .fullScreenCover(isPresented: $signUpIsShown) {
+                    RegisterView()
+                }
         ViewThatFits{
             ScrollView(.vertical, showsIndicators: false) {
                 HelperView()
@@ -52,21 +59,14 @@ struct RegisterView: View{
             HelperView()
         }
                 
-                Text("BeFake.")
-                    .multilineTextAlignment(.center)
-                    .fontWeight(.heavy)
-                    .font(.largeTitle)
-                    .padding(.top, -5)
-                    
-                
                 HStack {
-                    Text("already have an account?")
+                    Text("Already have an account?")
                         .fontWeight(.thin)
                         .font(.callout)
                         .vAlign(.bottom)
                        
                     
-                    Button("LogIn."){
+                    Button("Login Now"){
                         dismiss()
                         
                     }
@@ -91,6 +91,7 @@ struct RegisterView: View{
                 
         
                 .alert(errorMessage, isPresented: $showError, actions:{})
+                
             }
     
     
@@ -101,13 +102,6 @@ struct RegisterView: View{
             VStack(spacing: 1){
                 
                 
-                Text("SignUp.")
-                    .font(.largeTitle)
-                    .hAlign(.center)
-                    .fontWeight(.light)
-                    .padding(30)
-                    .background(Divider(), alignment: .bottom)
-                    .padding(.top, 10)
                 
                 ZStack{
                     if let userProfilePicData, let image = UIImage(data: userProfilePicData){
@@ -132,23 +126,31 @@ struct RegisterView: View{
                     .onTapGesture{
                         showImagePicker.toggle()
                     }
-                    .offset(y: 70)
+                    .offset(y: 30)
                 
-
-            
+                
                 
                 VStack(spacing: 1){
                     HStack(spacing: 1) {
                         Image(systemName: "person.circle.fill")
                             .padding(.top, 20)
                             .offset(x:18, y:98)
-                        TextField("username", text: $userName)
+                        Text("Click on Profile Icon").bold()
+                            .textContentType(.emailAddress)
+                          
+                            .textInputAutocapitalization(.never)
+                            .disableAutocorrection(true)
+                            .padding(.top, -40)
+                            .padding(.horizontal, 35)
+                            .offset(y: -10)
+                        
+                        TextField("Username", text: $userName)
                             .textContentType(.emailAddress)
                             .border(1, .gray.opacity(0.2))
                             .textInputAutocapitalization(.never)
                             .disableAutocorrection(true)
                             .padding(.top, 20)
-                            .padding(.horizontal, 25)
+                            .padding(.horizontal, -135)
                             .offset(y: 95)
 
                     }
@@ -157,7 +159,7 @@ struct RegisterView: View{
                         Image(systemName: "person.text.rectangle.fill")
                             .padding(.top, 55)
                             .offset(x:15, y:62)
-                        TextField("email", text: $emailID)
+                        TextField("Email", text: $emailID)
                             .textContentType(.emailAddress)
                             .border(1, .gray.opacity(0.2))
                             .textInputAutocapitalization(.never)
@@ -172,7 +174,7 @@ struct RegisterView: View{
                         Image(systemName: "door.left.hand.closed")
                             .padding(.top, 60)
                             .offset(x: 21, y: 22)
-                        SecureField("password", text: $password)
+                        SecureField("Password", text: $password)
                             .textContentType(.emailAddress)
                             .border(1, .gray.opacity(0.2))
                             .textInputAutocapitalization(.never)
@@ -186,7 +188,7 @@ struct RegisterView: View{
                     HStack {
                         Image(systemName: "pencil.circle.fill")
                             .offset(x:20 ,y:10)
-                        TextField("bio", text: $userBio, axis: .vertical)
+                        TextField("Bio", text: $userBio, axis: .vertical)
                             .frame(minHeight: 25, alignment: .top)
                             .textContentType(.emailAddress)
                             .border(1, .gray.opacity(0.2))
@@ -197,7 +199,7 @@ struct RegisterView: View{
                             .offset(x:-7 ,y: -19)
                     }
                     
-                        TextField("link for bio (optional)", text: $userBioLink)
+                        TextField("Link for bio (Optional)", text: $userBioLink)
                             .textContentType(.emailAddress)
                             .border(1, .gray.opacity(0.2))
                             .textInputAutocapitalization(.never)
@@ -208,7 +210,8 @@ struct RegisterView: View{
                 
 
                     Button(action: registerUser){
-                        Text("SignUp.")
+                        Text("Ready to SignUp")
+                            .fontWeight(.bold)
                             .foregroundColor(.black)
                             .hAlign(.center)
                             .fillView(.white)
@@ -218,7 +221,7 @@ struct RegisterView: View{
                         
                     }
                     
-                    Text("BeFake.")
+                    Text("BeFake")
                         .multilineTextAlignment(.center)
                         .fontWeight(.heavy)
                         .font(.largeTitle)
@@ -226,25 +229,7 @@ struct RegisterView: View{
                         
                         
                     
-                    HStack {
-                        Text("already have an account?")
-                            .fontWeight(.thin)
-                            .font(.callout)
-                            .vAlign(.bottom)
-                            .offset(y:-22)
-                           
-                        
-                        Button("LogIn."){
-
-                            dismiss()
-                            
-                        }
-                        .font(.callout)
-                        .vAlign(.bottom)
-                        .offset(y:-22)
-                        .disablewithOpacity(userName == "" || userBio == "" || emailID == "" || password == "" || userProfilePicData == nil )
-
-                    }
+                    
                     
                 }
                     
@@ -266,7 +251,10 @@ struct RegisterView: View{
     let storageRef = Storage.storage().reference().child("Profile_Images").child(userUID)
                 let _ = try await storageRef.putDataAsync(imageData)
                 let downloadURL = try await storageRef.downloadURL()
-                let user = User(username: userName, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
+                var user = User(username: userName, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
+              //  if user.userEmail == emailID{
+               //     await setError(errorstring: "User Exist")
+                //}
                 let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: {
                     error in
                     if error == nil{
@@ -291,6 +279,12 @@ struct RegisterView: View{
             showError.toggle()
             isLoading = false
         })
+    }
+    @MainActor
+    func setError(errorstring: String ){
+        errorMessage = errorstring
+        showError.toggle()
+        isLoading = false
     }
     
     }
