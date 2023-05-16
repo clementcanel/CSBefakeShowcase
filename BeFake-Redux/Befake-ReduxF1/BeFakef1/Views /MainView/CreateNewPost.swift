@@ -37,7 +37,7 @@ struct CreateNewPost: View {
                         dismiss()
                     }
                 } label: {
-                    Text("Cancel ")
+                    Text("Cancel")
                         .font(.callout)
                         .foregroundColor(.white)
                 }

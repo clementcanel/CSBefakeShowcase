@@ -28,7 +28,7 @@ struct LoginView: View {
     var body: some View {
         VStack(spacing: 5){
             
-            Text("LogIn")
+            Text("Login")
                 .font(.largeTitle)
                 .hAlign(.center)
                 .fontWeight(.light)
@@ -77,7 +77,7 @@ struct LoginView: View {
                         .padding(.top, 50)
                 }
                 
-                Text("BeFake.")
+                Text("BeFake")
                     .multilineTextAlignment(.center)
                     .fontWeight(.heavy)
                     .font(.largeTitle)

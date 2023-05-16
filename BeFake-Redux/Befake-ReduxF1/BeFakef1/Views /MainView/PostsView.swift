@@ -30,7 +30,7 @@ struct PostsView: View {
                     }
                     .padding(15)
                 }
-                .navigationTitle("FakePosts.")
+                .navigationTitle("FakePosts")
         }
         .fullScreenCover(isPresented: $createNewPost) {
             CreateNewPost { post in

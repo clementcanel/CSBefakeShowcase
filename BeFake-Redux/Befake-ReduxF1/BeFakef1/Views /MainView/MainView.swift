@@ -15,12 +15,12 @@ struct MainView: View {
                 PostsView()
                     .tabItem {
                         Image(systemName: "photo.fill.on.rectangle.fill")
-                        Text("posts")
+                        Text("Posts")
                     }
                 ProfileView()
                     .tabItem {
                         Image(systemName: "person.and.background.dotted")
-                        Text("profile")
+                        Text("Profile")
                     }
             }
             .tint(.gray)

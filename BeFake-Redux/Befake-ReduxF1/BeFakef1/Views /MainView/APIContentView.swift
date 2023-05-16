@@ -15,7 +15,7 @@ struct APIContentView: View {
         ScrollView{
             LazyVStack (alignment: .leading){
             ForEach(randomImages.photoArray, id: \.id) { photo in
-                WebImage(url: URL(string: photo.urls["thumb"]!))
+                WebImage(url: URL(string: photo.urls["Thumb"]!))
                     .resizable()
                     .frame(width: 400, height: 400)
             }

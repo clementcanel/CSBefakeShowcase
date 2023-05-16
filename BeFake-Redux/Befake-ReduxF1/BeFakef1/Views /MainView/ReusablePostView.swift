@@ -19,7 +19,7 @@ struct ReusablePostView: View {
                         .padding(.top,30)
                 }else{
                     if posts.isEmpty{
-                        Text("Make some friends dude.")
+                        Text("Make some friends dude!")
                             .font(.subheadline)
                             .fontWeight(.bold)
                             .foregroundColor(.gray)

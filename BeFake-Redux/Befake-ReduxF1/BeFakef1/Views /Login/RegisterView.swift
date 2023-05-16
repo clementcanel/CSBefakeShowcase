@@ -102,7 +102,7 @@ struct RegisterView: View{
         VStack(spacing: 1){
             
             
-            Text("Weclome")
+            Text("Lets Get Registered")
                 .font(.largeTitle)
                 .hAlign(.center)
                 .fontWeight(.light)
@@ -244,7 +244,7 @@ struct RegisterView: View{
                         .offset(y:-22)
                     
                     
-                    Button("LogIn"){
+                    Button("Login"){
                         
                         signUpIsShown.toggle()
                         dismiss()
