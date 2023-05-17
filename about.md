@@ -24,7 +24,7 @@ People in their low to mid 30's starting new families and new chapters of their 
 Viber REST API | Vib  
 User Login & Signup Feature  
 Post photos with ability to like/dislike  
-Reset Password/Email
+Reset Password/email  
 Photos from camera roll  
 Navigation between posts & profiles  
 Ability to provide text along with photo  
