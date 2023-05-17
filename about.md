@@ -10,6 +10,7 @@ Dawit Solomon → Developer
 Interaction with friends
 Familiarity with sports
 Quick thinking and reaction time
+
 **Audience:**
 Middle school to high school students
 University students
