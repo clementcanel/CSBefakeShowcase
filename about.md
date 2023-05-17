@@ -35,7 +35,7 @@ Alex Gordon
 Elijah Senior  
 Dawit Solomon  
 Professor Dondi  
-LMU Computer Science TAS
+LMU Computer Science TAs
 
 
 
