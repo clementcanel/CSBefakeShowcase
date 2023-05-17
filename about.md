@@ -14,7 +14,10 @@ Quick thinking and reaction time
 Middle school to high school students  
 University students  
 Young adults starting new jobs or the next chapter of their life  
-People in their low to mid 30's starting new families and new chapters of their life  
+People in their low to mid 30's starting new families and new chapters of their life
+### Technology highlights
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/0b5e4256-347c-451b-b57f-c92f30b0855a)
+
 
 
 
