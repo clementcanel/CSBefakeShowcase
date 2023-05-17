@@ -22,9 +22,12 @@ People in their low to mid 30's starting new families and new chapters of their 
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/d745532a-8a41-4867-82d3-3fa52d2dfc50)
 ### Technology highlights
 Viber REST API | Vib  
-User Login & Signup Feature 
+User Login & Signup Feature  
 Post photos with ability to like/dislike  
-Reset 
+Reset Password/Email
+Photos from camera roll  
+Navigation between posts & profiles  
+Ability to provide text along with photo  
 
 ### Credit
 Clement Canel  
