@@ -13,14 +13,14 @@
 | • Three (3) projects | Three possible projects are listed | 6/6 |
 | • Three (3) sets of goals/ideas | Each project has goals/ideas attached to it | 6/6 |
 | • Project choice | A winning project/app is indicated | 3/3 |
-| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0429 (–5) | -5 |
+| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0429 (–5) ***The group was under the impression that we had until 0505 to submit our work due to the extension granted by skiness*** | -5 |
 | | _pitch.md_ | |
 | • In-class workshop | Elijah and Alex workshopped the pitch in-class—points will be assigned individually (–4) | -4 |
 | • Inspiration statement | Inspiration statement is provided—not quite phrased according to what is specified in Dr. Toal’s [ideation process page](https://cs.lmu.edu/~ray/notes/ideation/) but is sufficiently audience-centric to work | 4/4 |
 | • 2–3 possible solutions | Possible solutions are given | 10/10 |
 | • Chosen fleshed-out idea | Chosen preliminary idea is fleshed out | 12/12 |
 | • Human story | Human story is provided, phrased closely enough to what’s in Dr. Toal’s [ideation process page](https://cs.lmu.edu/~ray/notes/ideation/) | 4/4 |
-| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0505 ***The group was under the impression that we had until 0505 to submit our work due to the extension granted by skiness*** (–7) | -7 |
+| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0505 (–7) ***The group was under the impression that we had until 0505 to submit our work due to the extension granted by skiness*** | -7 |
 | | _about.md_ | |
 | • Project title | Title is provided | 2/2 |
 | • Team names and roles | Team members and your roles are listed | 12/12 |
