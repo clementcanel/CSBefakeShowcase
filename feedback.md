@@ -20,7 +20,7 @@
 | • 2–3 possible solutions | Possible solutions are given | 10/10 |
 | • Chosen fleshed-out idea | Chosen preliminary idea is fleshed out | 12/12 |
 | • Human story | Human story is provided, phrased closely enough to what’s in Dr. Toal’s [ideation process page](https://cs.lmu.edu/~ray/notes/ideation/) | 4/4 |
-| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0505 (–7) | -7 |
+| • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0505 ***The group was under the impression that we had until 0505 to submit our work due to the extension granted by skiness*** (–7) | -7 |
 | | _about.md_ | |
 | • Project title | Title is provided | 2/2 |
 | • Team names and roles | Team members and your roles are listed | 12/12 |
