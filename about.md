@@ -1,5 +1,5 @@
 ### Project Title
-![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/c956e7a5-18b6-44fd-9f57-67dfe8d558dd)
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/9f252793-9d55-45e9-b5df-7f247d6d5e71)  
 Befake. (CMSI 2022: Mobile Application Development)
 ### Team names and roles
 Clement Canel → Technical Writer   
