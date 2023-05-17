@@ -9,7 +9,7 @@ Dawit Solomon → Developer
 **Needs:**  
 Interaction with friends    
 Familiarity with sports  
-Quick thinking and reaction time
+Quick thinking and reaction time  
 **Audience:**  
 Middle school to high school students  
 University students  
