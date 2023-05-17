@@ -27,7 +27,7 @@
 | • Audience and their needs | Audience and their needs are explained | 10/10 |
 | • Screenshots/video/demo | Screenshots are provided | 14/14 |
 | • Technology highlights | Technology details are provided | 12/12 |
-| • Credits | Credits are provided—but on a separate note, the aforementioned content was not given in a Markdown file as stipulated by the instructions (–5) ***Updated so aforementioned content is given in Markdown file*** | -5 |
+| • Credits | Credits are provided—but on a separate note, the aforementioned content was not given in a Markdown file as stipulated by the instructions (–5) ***Updated so aforementioned content is given in Markdown file about.md*** | -5 |
 | • In-class prsentation | Final presentation successfully delivered in class 👏🏼👏🏼👏🏼 |  |
 | | **Baseline functionality** | |
 | • Third-party web service API | The random image generator doesn't really add anything to your app (–1), and the API results don't actually show up in the app since the profile tab just loads infinitely (–8) | 16/25 |
