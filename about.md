@@ -1,14 +1,13 @@
 ### Project Title
-Befake. (CMSI 2022: Mobile Application Development
+Befake. (CMSI 2022: Mobile Application Development)
 ### Team names and roles
-Clement Canel → Technical Writer 
-Alex Gordon →Project Manager 
-Elijah Senior → Head Developer
+Clement Canel → Technical Writer   
+Alex Gordon →Project Manager   
+Elijah Senior → Head Developer  
 Dawit Solomon → Developer
 ### Audience and their needs
 **Needs:** 
-Interaction with friends
-
+Interaction with friends  
 Familiarity with sports
 
 Quick thinking and reaction time
