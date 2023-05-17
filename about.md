@@ -7,15 +7,15 @@ Alex Gordon →Project Manager
 Elijah Senior → Head Developer  
 Dawit Solomon → Developer
 ### Audience and their needs
-**Needs:**  
-Interaction with friends    
-Familiarity with sports  
-Quick thinking and reaction time  
 **Audience:**  
 Middle school to high school students  
 University students  
 Young adults starting new jobs or the next chapter of their life  
-People in their low to mid 30's starting new families and new chapters of their life
+People in their low to mid 30's starting new families and new chapters of their life  
+**Needs:**  
+Interaction with friends    
+Familiarity with sports  
+Quick thinking and reaction time  
 ### Screenshots/video/demo
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
