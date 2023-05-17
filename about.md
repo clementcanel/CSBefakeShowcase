@@ -6,11 +6,11 @@ Alex Gordon →Project Manager
 Elijah Senior → Head Developer  
 Dawit Solomon → Developer
 ### Audience and their needs
-**Needs:**
+**Needs:**  
 Interaction with friends    
 Familiarity with sports  
 Quick thinking and reaction time
-**Audience:**
+**Audience:**  
 Middle school to high school students  
 University students  
 Young adults starting new jobs or the next chapter of their life  
