@@ -19,6 +19,15 @@ People in their low to mid 30's starting new families and new chapters of their 
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/b143c00c-a539-43dc-896d-24b487c0b5b4)
+### Technology highlights
+Viber REST API | Vib
+### Credit
+Clement Canel  
+Alex Gordon  
+Elijah Senior  
+Dawit Solomon  
+Professor Dondi  
+LMU Computer Science TAS
 
 
 
