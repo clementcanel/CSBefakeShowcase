@@ -32,7 +32,7 @@
 | | **Baseline functionality** | |
 | • Third-party web service API | The random image generator doesn't really add anything to your app (–1), and the API results don't actually show up in the app since the profile tab just loads infinitely (–8) ***Fixed*** | 16/25 |
 | • Authentication | Authentication is done via custom Firestore implementation | 10/10 |
-| • Database | Database use is derived from blog code, with storing posts and the number of likes per post. So although database use is indeed present, it would be unfair to give this work the same credit as other groups, which expanded database use more substantially from the prior assignment (–5) | 20/25 |
+| • Database | Database use is derived from blog code, with storing posts and the number of likes per post. So although database use is indeed present, it would be unfair to give this work the same credit as other groups, which expanded database use more substantially from the prior assignment (–5) ***Added functionality to save tag and comment***  | 20/25 |
 | | **Implementation specifications** | |
 | • Model objects | Model objects are generally OK, but the `CodingKeys` is superfluous for both objects (–1) ***Fixed*** | 7/8 | 
 | • Interaction with back-end | The back-end doesn't sync with the front-end: liking a post requires the user to force-refresh the page by closing and reopening the app before the "like" button is updated, and adding a post seems to load indefinitely (–10) ***Fixed*** | 2/12 |
