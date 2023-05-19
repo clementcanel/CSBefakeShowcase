@@ -146,8 +146,8 @@
 		6C476D4129EBD47600614EE5 /* BeFakef1 */ = {
 			isa = PBXGroup;
 			children = (
-				CFA6DA902A1212180044F78E /* ContentView.swift */,
 				CFD28AE22A16E54F00A59478 /* GoogleService-Info.plist */,
+				CFA6DA902A1212180044F78E /* ContentView.swift */,
 				CFA6DA922A12122B0044F78E /* LoadingView.swift */,
 				CFA6DA942A12125C0044F78E /* Model */,
 				CFD28AE02A16E37A00A59478 /* BeFakef1App.swift */,
