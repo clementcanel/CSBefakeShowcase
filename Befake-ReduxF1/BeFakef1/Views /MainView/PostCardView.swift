@@ -14,12 +14,14 @@ struct PostCardView: View {
     var post: Post
     
     @AppStorage("user_UID") private var userUID: String = ""
-    
+    @Binding var message: String
+    @Binding var tagged: Bool
     @State private var docListener: ListenerRegistration?
     @State var likedPostCount: Int
     var closure:(()->Void)?
     var dislikeClosure:(()->Void)?
-    
+    var tagClosure:(()->Void)?
+    var messageClosure:(()->Void)?
     var body: some View {
         HStack(alignment: .top, spacing: 12){
             WebImage(url: post.imageURL)
@@ -56,30 +58,54 @@ struct PostCardView: View {
                         .font(.footnote)
                         .fontWeight(.light)
                         .padding(.horizontal)
-                  
-                        HStack(spacing: 8){
-                            Button {
-                                closure?()
-                            } label: {
-                                Image(systemName: post.likedIDs.contains(userUID) ? "heart.fill" : "heart")
-                                    .resizable()
-                                    .frame(width: 15, height: 15)
-                                    .foregroundColor(.white)
-                            }.onLongPressGesture {
-                                dislikeClosure?()
-                            }
-                            Text("\(post.likedCount)")
-                                .font(.callout)
-                                .foregroundColor(.gray)
-                            
+                    
+                    HStack(spacing: 20){
+                        Button {
+                            closure?()
+                        } label: {
+                            Image(systemName: post.likedIDs.contains(userUID) ? "heart.fill" : "heart")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.white)
+                        }.onLongPressGesture {
+                            dislikeClosure?()
+                        }
+                        Text("\(post.likedCount)")
+                            .font(.callout)
+                            .foregroundColor(.gray)
+                        Button{
+                            tagClosure?()
+                        }label: {
+                            Image(systemName: post.tag ? "tag.fill": "tag")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.white)
+                               
                         }
                         
+                        Button {
+                            messageClosure?()
+                        } label: {
+                            Image(systemName: "bubble.right")
+                                .resizable()
+                                .frame(width: 20,height: 20)
+                                .foregroundColor(.white)
+                        }
+                        
+                        
+                    }
                 }
                     Text(post.publishedDate.formatted(date: .numeric, time: .shortened))
                         .font(.caption2)
                         .fontWeight(.light)
                         .foregroundColor(.yellow)
-                    
+                if !post.comments.isEmpty{
+                    VStack{
+                        Text(post.comments).multilineTextAlignment(.center)
+                            .lineLimit(0)
+                            .foregroundColor(.white)
+                    }.frame(height: 50).background(.black)
+                }
                 
             }
             

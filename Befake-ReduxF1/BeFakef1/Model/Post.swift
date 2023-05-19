@@ -22,5 +22,6 @@ struct Post: Codable, Identifiable, Equatable, Hashable {
     var userUID: String
     var userProfileURL: URL
     var likedCount: Int = 0
-    
+    var tag: Bool = false
+    var comments: String = ""
 }

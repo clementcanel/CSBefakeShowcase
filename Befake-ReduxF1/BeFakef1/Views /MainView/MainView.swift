@@ -13,15 +13,15 @@ struct MainView: View {
     var body: some View {
        
             TabView{
-                PostsView()
+                PostsView(message: "")
                     .tabItem {
                         Image(systemName: "photo.fill.on.rectangle.fill")
-                        Text("Posts")
+                        Text("posts")
                     }
                 ProfileView().environmentObject(firebaseService)
                     .tabItem {
                         Image(systemName: "person.and.background.dotted")
-                        Text("Profile")
+                        Text("profile")
                     }
             }
             .tint(.gray)

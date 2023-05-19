@@ -10,9 +10,10 @@ import SwiftUI
 struct PostsView: View {
     @State private var recentPosts: [Post] = []
     @State private var createNewPost: Bool = false
+    @State var message:String
     var body: some View {
         NavigationStack{
-            ReusablePostView(posts: $recentPosts)
+            ReusablePostView(posts: $recentPosts, messages: message)
                 .hAlign(.center).vAlign(.center)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
@@ -42,6 +43,6 @@ struct PostsView: View {
 
 struct PostsView_Previews: PreviewProvider {
     static var previews: some View {
-        PostsView()
+        PostsView(message: "")
     }
 }
