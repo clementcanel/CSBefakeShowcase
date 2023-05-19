@@ -15,7 +15,7 @@
 | • Project choice | A winning project/app is indicated | 3/3 |
 | • Content-completion | _ideation.md_ first committed on 0424 but with no content; all other information not committed until 0429 (–5) ***The group was under the impression that we had until 0505 to submit our work due to the extension granted*** | -5 |
 | | _pitch.md_ | |
-| • In-class workshop | Elijah and Alex workshopped the pitch in-class—points will be assigned individually (–4) | -4 |
+| • In-class workshop | Elijah and Alex workshopped the pitch in-class—points will be assigned individually (–4)***Could not attend due to sickness*** | -4 |
 | • Inspiration statement | Inspiration statement is provided—not quite phrased according to what is specified in Dr. Toal’s [ideation process page](https://cs.lmu.edu/~ray/notes/ideation/) but is sufficiently audience-centric to work | 4/4 |
 | • 2–3 possible solutions | Possible solutions are given | 10/10 |
 | • Chosen fleshed-out idea | Chosen preliminary idea is fleshed out | 12/12 |
