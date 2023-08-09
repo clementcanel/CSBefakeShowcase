@@ -1,19 +1,30 @@
-Pitch Notes 
-1)- Our chosen audience is college students. 
+# beFake Social Media App Pitch
 
-For this desired audience, an inspiration statement for us is… beFake is a fun and unique social media app which provides a way to laugh and have friendly competition with others (friends or people all around the world) because they value fun, connection, laughter, and comparing to see who is the “fakest”.
+## Audience
+Our target audience is college students.
 
-2)- 2-3 possible solutions from the preliminary ideation
+## Inspiration Statement
+**beFake** is an innovative social media app designed exclusively for college students. It offers a unique and entertaining way to connect with others globally, fostering friendly competition and laughter. Users engage in a playful comparison of authenticity to determine who can be the most "fake" in a lighthearted manner.
 
-One solution for beFake is by offering incentives to the winner of whoever is the least “fake” -- whether at the end of the month, the people with the most points on the leaderboard can share a prize of, for example, 50$. This will thus attract people to want to play to win the prize and resultantly generate more traffic to the app.
+## Potential Solutions
 
-Another solution is that since our targeted population is young adults and college students, there is a chance we will have potential NSFW photos pulled from the random photo generator connected to an individual's camera roll and those are things that we would not want to be posted, so we could enforce an API to restrict or blur dirty photos to ensure the longevity of the app and to make it safe for all to use.
+### Incentive-driven Competition
+One solution is to introduce an incentive-driven competition. Users with the highest points on the leaderboard at the end of each month can share a prize, such as a $50 jackpot. This gamification of authenticity encourages user participation, generating increased traffic for the app.
 
-A solution for our potential sports trivia app could be to allow for online play so one is competing with a friend simultaneously seeing who can answer the most questions correctly, the quickest. This will allow for friendly competition and excitement and never get old competing with a friend who's the most knowledgeable on their favorite subject.
+### Image Safety with AI
+To maintain a safe and respectful environment, we will implement an API that detects and blurs inappropriate or NSFW content from users' uploaded images. This feature ensures the app remains welcoming and secure for all users, particularly young adults and college students.
 
-Lastly, a solution to the reaction time could be by introducing the idea of having different reaction practice games for each individual's different and unique interests. For instance, if someone wants to get into nascar there could be a driving simulation where one has to avoid the obstacles by tapping the screen, and conversely if one is a domino's worker in rush hour they can work on tapping the screen to simulate a perfectly cut pizza and box fold. While this is just an example, the premise would be to allow for many different young adults and university students to increase the speed of their reaction time to their own specific niche.
+### Real-time Trivia Challenges
+For sports enthusiasts, the app can feature real-time trivia challenges where users compete head-to-head to answer questions accurately and quickly. This dynamic gaming element adds excitement and promotes friendly competition among users.
 
-3)- Our team chose to roll with App beFake during the preliminary ideation. We fleshed it out by understanding how in society today, a social media app could be really cool and popular. We think it will not be too difficult to build as it is relatively similar to the concept of beReal just with its own unique twist on it. By using firebase, and some API’s that we find we believe we can successfully put this together, and keep the aesthetic similar to beReal in order to hopefully promote positive engagement from our target audience similar to the viral sensation that beReal once received. Overall, we believe most resources are freely available. We would plan on making this app free to start and maybe even offering a small prize pool each month to promote activity and engagement and participating in the app properly by not being fake! 
+### Tailored Reaction Training
+To address reaction time improvement, the app will offer various reaction practice games aligned with users' interests. These games will cater to individual passions, enhancing reaction skills while engaging users in their unique hobbies.
+
+## Chosen Idea: App beFake
+Our team is excited to move forward with **beFake**. Building upon the success of beReal, this concept offers a fresh take on social media engagement. We are confident in our ability to create an interactive platform using Firebase and strategic APIs, maintaining the engaging aesthetic that users loved in beReal. With readily available resources, our plan is to launch the app for free initially and potentially incorporate a monthly prize pool to encourage user activity and genuine interactions.
+
+## Human Story
+**beFake** is a transformative social media app that bridges gaps between old friends and fosters new connections worldwide. Through daily photo sharing from users' lives, environments, or intriguing moments, beFake redefines authenticity through a delightful competition. College students and young adults find joy in sharing their lives and engaging with a global community, building relationships grounded in genuine experiences. After incorporating feedback from other teams, beFake's narrative has evolved into a compelling story of connectivity, laughter, and the pursuit of authentic human expression.
 
 4)- The final version of the human story for our app after receiving feedback from other teams….
 
