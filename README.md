@@ -6,10 +6,12 @@
   - [ ] CreateNewPost
   - [ ] LoginView
   - [ ] RegisterView
+  
   Create abstractions for these components to improve code structure and maintainability.
 - [ ] Address warning messages:
   - [ ] Warning 1
   - [ ] Warning 2
   - [ ] Warning 3
+ 
   Update the code to eliminate these warnings during the build process.
 
