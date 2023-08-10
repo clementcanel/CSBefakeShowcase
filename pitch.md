@@ -25,7 +25,3 @@ Our team is excited to move forward with **beFake**. Building upon the success o
 
 ## Human Story
 **beFake** is a transformative social media app that bridges gaps between old friends and fosters new connections worldwide. Through daily photo sharing from users' lives, environments, or intriguing moments, beFake redefines authenticity through a delightful competition. College students and young adults find joy in sharing their lives and engaging with a global community, building relationships grounded in genuine experiences. After incorporating feedback from other teams, beFake's narrative has evolved into a compelling story of connectivity, laughter, and the pursuit of authentic human expression.
-
-4)- The final version of the human story for our app after receiving feedback from other teams….
-
-beFake is a social media app that helps strengthen the roots of old friendships and create new friendships with other citizens from all over the world by sharing a daily photo about themselves, their environment, or anything they think is cool each day from their camera roll all in a mission to see who is the most authentic and who will need to “beFake” on a day to day basis.
