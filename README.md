@@ -3,10 +3,12 @@
 
 beFake is a social media application inspired by BeReal. It fosters a unique competitive environment where users engage in friendly rivalry with classmates and co-workers to determine whose uploaded photos and posts exude the most authenticity.
 
-![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
-![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/9f252793-9d55-45e9-b5df-7f247d6d5e71)  
 
 ## Features
+
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
 
 ### Technology Highlights
 - **Firebase Integration:** Seamlessly integrate Firebase backend services to power the app's functionality.
