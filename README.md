@@ -22,4 +22,9 @@ beFake is a social media application inspired by BeReal. It fosters a unique com
   - [ ] Warning 3
  
   Update the code to eliminate these warnings during the build process.
+- [ ] Implement post limit per day: Allow users to create only one post per day to encourage more thoughtful and genuine content sharing.
+
+- [ ] Introduce local and global leaderboards:
+  - [ ] Local leaderboard: Display a leaderboard within specific user communities (classmates or co-workers) to showcase the users with the most authentic posts.
+  - [ ] Global leaderboard: Establish a global leaderboard that highlights the most authentic posts across all users on the platform.
 
