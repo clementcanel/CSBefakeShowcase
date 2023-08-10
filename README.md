@@ -6,6 +6,23 @@ beFake is a social media application inspired by BeReal. It fosters a unique com
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
 ![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
 
+## Features
+
+### Technology Highlights
+- **Firebase Integration:** Seamlessly integrate Firebase backend services to power the app's functionality.
+- **Viber REST API:** Leveraging the Viber REST API to enhance user experience.
+
+### Core Features
+- **User Login & Signup:** Utilize Firebase Authentication for a secure and streamlined user authentication and registration process.
+- **Post Photos with Like/Dislike:** Leverage Firebase Firestore to allow users to share photos and interact with content through likes and dislikes.
+- **Reset Password/Email:** Provide users with the convenience of password reset via Firebase Authentication's email services.
+- **Photos from Camera Roll:** Access and upload photos directly from the device's camera roll using Firebase Storage.
+- **Navigation between Posts & Profiles:** Implement smooth navigation between posts and user profiles with Firebase's real-time database capabilities.
+
+### Additional Features
+- **Text Accompaniment for Photos:** Enhance storytelling by providing textual context alongside photos, utilizing Firebase Firestore for content storage.
+
+
 ## Todo
 
 - [ ] **Resolve Lingering Sync Glitch:** Investigate and fix the issue where likes occasionally revert to their previous value during app interaction with the backend.
