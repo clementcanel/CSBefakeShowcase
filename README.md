@@ -7,9 +7,6 @@ beFake is a social media application inspired by BeReal. It fosters a unique com
 
 ## Features
 
-![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
-![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
-
 ### Technology Highlights
 - **Firebase Integration:** Seamlessly integrate Firebase backend services to power the app's functionality.
 - **Viber REST API:** Leveraging the Viber REST API to enhance user experience.
@@ -23,7 +20,8 @@ beFake is a social media application inspired by BeReal. It fosters a unique com
 
 ### Additional Features
 - **Text Accompaniment for Photos:** Enhance storytelling by providing textual context alongside photos, utilizing Firebase Firestore for content storage.
-
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/a83cbe7e-e72e-489e-8380-bbbe5caff9e1)
+![image](https://github.com/lmu-cmsi2022-spring2023/befake-redux/assets/112435653/85c9a7d2-1a87-4dc3-b9c4-d4a52efa538c)
 
 ## Todo
 
